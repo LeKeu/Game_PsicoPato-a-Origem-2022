@@ -7,24 +7,19 @@ public class ColisaoHard : MonoBehaviour
 {
     [SerializeField] Sprite novaSprite;
     [SerializeField] GameObject carro;
-    int qntd = 0;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Pessoa")
         {
-            if(qntd == 5){
+            if(GameObject.FindGameObjectsWithTag("Pessoa").Length <= 1){
                 SceneManager.LoadScene("Win");
             }else{
                 other.GetComponent<SpriteRenderer>().sprite = novaSprite;
                 other.tag = "Patinho";
-                qntd++;
                 CriarCarro1();
                 CriarCarro2();
             }
-        }
-        if(other.tag == "Patinho"){
-            Debug.Log("PATINHOOO");
         }
     }
 
@@ -39,3 +34,4 @@ public class ColisaoHard : MonoBehaviour
     }
 
 }
+

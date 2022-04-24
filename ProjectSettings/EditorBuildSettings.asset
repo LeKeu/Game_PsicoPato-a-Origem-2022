@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EasyMode.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 7dce39aac809ed14696764a0f2fb4e30
   - enabled: 1
-    path: Assets/Scenes/LoseEasy.unity
-    guid: 1e669aab86829914c88853e9f339acf1
+    path: Assets/Scenes/EasyMode.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/HardMode.unity
+    guid: 25957f8ebc5df4547a3c753cd1c54385
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 85a2e0674edbfd149a74a154ef54e660
   - enabled: 1
-    path: Assets/Scenes/HardMode.unity
-    guid: 25957f8ebc5df4547a3c753cd1c54385
+    path: Assets/Scenes/LoseEasy.unity
+    guid: 1e669aab86829914c88853e9f339acf1
   - enabled: 1
     path: Assets/Scenes/LoseHard.unity
     guid: f3ba91e4ead26894fad5ad9672cba3ae
