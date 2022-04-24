@@ -7,28 +7,20 @@ public class Colisao : MonoBehaviour
 {
     [SerializeField] Sprite novaSprite;
     [SerializeField] GameObject carro;
-    int qntd = 0;
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("Ouch");
-    }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("Passou por mim?");
         if (other.tag == "Pessoa")
         {
-            if(qntd == 5){
+            if(GameObject.FindGameObjectsWithTag("Pessoa").Length <= 1){
                 SceneManager.LoadScene("Win");
             }else{
                 other.GetComponent<SpriteRenderer>().sprite = novaSprite;
                 other.tag = "Patinho";
-                qntd++;
                 CriarCarro();
             }
-        }
-        if(other.tag == "Patinho"){
-            Debug.Log("PATINHOOO");
         }
     }
 
