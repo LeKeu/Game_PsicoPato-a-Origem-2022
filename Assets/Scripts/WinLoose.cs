@@ -26,6 +26,16 @@ public class WinLoose : MonoBehaviour
         }
     }
 
+    public void perderMedium()
+    {
+        if (!fimDeJogo)
+        {
+            Debug.Log("Perdeu...");
+            fimDeJogo = true; // faz isso p acontecer só uma vez a coisa toda
+            SceneManager.LoadScene("LoseMedium");
+        }
+    }
+
     public void perderHard()
     {
         if (!fimDeJogo)
