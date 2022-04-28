@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseHard.unity
     guid: f3ba91e4ead26894fad5ad9672cba3ae
+  - enabled: 1
+    path: Assets/Scenes/MediumMode.unity
+    guid: 46438e44a7969a844848e4bb0004cea1
+  - enabled: 1
+    path: Assets/Scenes/LoseMedium.unity
+    guid: 4b1952dfae47b6d49bd09ac477ca4fe6
   m_configObjects: {}

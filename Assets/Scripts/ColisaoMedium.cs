@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ColisaoHard : MonoBehaviour
+public class ColisaoMedium : MonoBehaviour
 {
     [SerializeField] Sprite novaSprite;
     [SerializeField] GameObject carro;
@@ -13,13 +13,12 @@ public class ColisaoHard : MonoBehaviour
         if (other.tag == "Pessoa")
         {
             if(GameObject.FindGameObjectsWithTag("Pessoa").Length <= 1){
-                SceneManager.LoadScene("WinHard");
+                SceneManager.LoadScene("WinMedium");
             }else{
                 other.GetComponent<SpriteRenderer>().sprite = novaSprite;
                 other.tag = "Patinho";
                 CriarCarro1();
                 CriarCarro2();
-                CriarCarro3();
             }
         }
     }
@@ -33,10 +32,4 @@ public class ColisaoHard : MonoBehaviour
         GameObject a = Instantiate(carro) as GameObject;
         a.transform.position = new Vector2(-15, 22);
     }
-
-    void CriarCarro3(){
-        GameObject a = Instantiate(carro) as GameObject;
-        a.transform.position = new Vector2(-40, -1);
-    }
-
 }

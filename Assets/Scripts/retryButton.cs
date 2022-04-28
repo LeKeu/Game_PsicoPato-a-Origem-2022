@@ -17,16 +17,12 @@ public class retryButton : MonoBehaviour
         
     }
 
-    public void LoadGameEasy(){
-        SceneManager.LoadScene("EasyMode");
-    }
-
-    public void LoadGameHard(){
-        SceneManager.LoadScene("HardMode");
-    }
-
     public void startGameEasy(){
         SceneManager.LoadScene("EasyMode");
+    }
+
+    public void startGameMedium(){
+        SceneManager.LoadScene("MediumMode");
     }
 
     public void startGameHard(){
@@ -35,5 +31,9 @@ public class retryButton : MonoBehaviour
 
     public void winRetry(){
         SceneManager.LoadScene("Menu");    
+    }
+
+    public void sair(){
+        Application.Quit();
     }
 }

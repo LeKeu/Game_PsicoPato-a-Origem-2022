@@ -16,6 +16,6 @@ public class ChangeText : MonoBehaviour
     void Update()
     {
         int qntd = GameObject.FindGameObjectsWithTag("Pessoa").Length;
-        textElement.text = qntd + " Pessoas no mapa";
+        textElement.text = " Pessoas no mapa: " + qntd;
     }
 }
