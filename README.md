@@ -10,8 +10,9 @@ Seu objetivo começa em uma pequena e colorida cidade do interior, tendo que fug
 
 
 Primeiro jogo feito
-Grupo: Letícia Keuffer, Amora Paixão, Felipe Machado e Pedro Benitah
-Programação --> Letícia Keuffer
-Arte --> Letícia Keuffer
+
+Programação --> Letícia Keuffer Cavalleiro de Macedo
+
+Arte --> Letícia Keuffer Cavalleiro de Macedo
 
 Itch Io --> https://cesupagamelab.itch.io/psicopato-a-origem 
